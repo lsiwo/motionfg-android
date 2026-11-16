@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Motion FG</string>
+    <string name="overlay_name">Motion FG — слой вывода</string>
+    <string name="overlay_description">Показывает обработанные кадры и быстрые настройки поверх игры. Использует расположение системных окон, чтобы скрыть картинку, когда открыта шторка.</string>
+    <style name="MotionTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#10141D</item>
+        <item name="android:colorAccent">#72E6C7</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorBackground">#10141D</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">#10141D</item>
+        <item name="android:navigationBarColor">#10141D</item>
+    </style>
+</resources>
