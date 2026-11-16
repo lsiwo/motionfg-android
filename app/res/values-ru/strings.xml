@@ -1,0 +1,159 @@
+<resources>
+    <string name="display" formatted="false">"  ·  экран "</string>
+    <string name="fps_reduce_the_resolution_or_frame_multiplier" formatted="false">" FPS. Уменьши разрешение или множитель."</string>
+    <string name="hdr_output_unavailable" formatted="false">" · HDR недоступен для вывода"</string>
+    <string name="up_to" formatted="false">" · до "</string>
+    <string name="frame" formatted="false">" · кадр "</string>
+    <string name="hz" formatted="false">" Гц"</string>
+    <string name="in_pixels" formatted="false">" в пикселях"</string>
+    <string name="frames" formatted="false">" кадров · "</string>
+    <string name="does_not_support" formatted="false">" не поддерживает "</string>
+    <string name="at" formatted="false">" при "</string>
+    <string name="per_axis" formatted="false">"% по каждой стороне"</string>
+    <string name="of_app_size" formatted="false">"% размера приложения"</string>
+    <string name="you_can_turn_off_keep_audio_for_this_file" formatted="false">". Для этого файла можно выключить «Сохранить звук»."</string>
+    <string name="label_120_nits" formatted="false">"120 нит"</string>
+    <string name="label_160_nits" formatted="false">"160 нит"</string>
+    <string name="label_203_nits" formatted="false">"203 нит"</string>
+    <string name="label_250_nits" formatted="false">"250 нит"</string>
+    <string name="android_denied_screen_capture" formatted="false">"Android не разрешил захват."</string>
+    <string name="android_could_not_create_the_capture_display_select_the_app_again" formatted="false">"Android не создал экран захвата. Повтори выбор приложения."</string>
+    <string name="egl_opened_a_different_color_space" formatted="false">"EGL открыл другое цветовое пространство"</string>
+    <string name="egl_configuration_unavailable" formatted="false">"EGL-конфигурация недоступна"</string>
+    <string name="gpu_could_not_allocate_buffers_for" formatted="false">"GPU не выделил буферы "</string>
+    <string name="gpu_could_not_send_the_frame_to_the_encoder" formatted="false">"GPU не передал кадр кодировщику"</string>
+    <string name="mp4_does_not_support_the_audio_track" formatted="false">"MP4 не принимает звуковую дорожку "</string>
+    <string name="motion_fg_is_running" formatted="false">"Motion FG запущен"</string>
+    <string name="motionfg_decoder" formatted="false">"MotionFG декодер"</string>
+    <string name="v_sync_on" formatted="false">"V‑Sync вкл."</string>
+    <string name="v_sync_off" formatted="false">"V‑Sync выкл."</string>
+    <string name="auto" formatted="false">"Авто"</string>
+    <string name="automatic" formatted="false">"Автоматически"</string>
+    <string name="upscaling" formatted="false">"Апскейлинг"</string>
+    <string name="balanced_fast_bicubic" formatted="false">"Баланс (быстрый бикубический)"</string>
+    <string name="balanced" formatted="false">"Баланс"</string>
+    <string name="sdr_white_in_hdr" formatted="false">"Белый SDR в HDR"</string>
+    <string name="motion_fg_quick_settings" formatted="false">"Быстрые настройки Motion FG"</string>
+    <string name="fast" formatted="false">"Быстрый"</string>
+    <string name="in_android_s_prompt_select_a_single_app_and_choose_the_game" formatted="false">"В окне Android выбери «Одно приложение» и укажи игру."</string>
+    <string name="the_file_has_no_video_track" formatted="false">"В файле нет видеодорожки"</string>
+    <string name="video_selected" formatted="false">"Видео выбрано"</string>
+    <string name="video" formatted="false">"Видео"</string>
+    <string name="enable_motion_fg_in_accessibility_to_display_processed_frames_ove" formatted="false">"Включи Motion FG в специальных возможностях для вывода поверх игры."</string>
+    <string name="enable_the_overlay_service_and_select_the_game_again" formatted="false">"Включи службу слоя вывода и заново выбери игру."</string>
+    <string name="choose_a_different_output_file" formatted="false">"Выбери другой файл для результата."</string>
+    <string name="the_selected_file_is_not_writable" formatted="false">"Выбранный файл недоступен для записи"</string>
+    <string name="select_video" formatted="false">"Выбрать видео"</string>
+    <string name="select_game" formatted="false">"Выбрать игру"</string>
+    <string name="hdr10_or_scrgb_output" formatted="false">"Вывод HDR10 или scRGB"</string>
+    <string name="off" formatted="false">"Выкл."</string>
+    <string name="height" formatted="false">"Высота"</string>
+    <string name="frame_generation" formatted="false">"Генерация кадров"</string>
+    <string name="done" formatted="false">"Готово · "</string>
+    <string name="the_decoder_did_not_produce_any_frames" formatted="false">"Декодер не выдал ни одного кадра"</string>
+    <string name="the_decoder_did_not_send_a_frame_to_the_gpu" formatted="false">"Декодер не передал кадр на GPU"</string>
+    <string name="the_decoder_does_not_support_hdr_to_sdr_conversion" formatted="false">"Декодер не поддерживает преобразование HDR → SDR"</string>
+    <string name="the_decoder_stopped_producing_frames" formatted="false">"Декодер перестал выдавать кадры"</string>
+    <string name="up_to_suffix" formatted="false">"До ×"</string>
+    <string name="the_gpu_driver_could_not_open_a_10_bit_yuv_surface_for_hdr" formatted="false">"Драйвер GPU не открыл 10-битный YUV-декодер для HDR"</string>
+    <string name="set_the_capture_buffer_width_and_height_in_pixels" formatted="false">"Задай ширину и высоту буфера захвата в пикселях."</string>
+    <string name="close_settings" formatted="false">"Закрыть настройки"</string>
+    <string name="capture" formatted="false">"Захват · "</string>
+    <string name="capture_is_active_tap_fg_in_game_for_quick_settings" formatted="false">"Захват активен. Настройки в игре открываются кнопкой FG."</string>
+    <string name="capture_failed_to_start_select_the_game_again" formatted="false">"Захват не запустился. Выбери игру ещё раз."</string>
+    <string name="game" formatted="false">"Игра"</string>
+    <string name="game_profile" formatted="false">"Игровой профиль"</string>
+    <string name="game_output_frames" formatted="false">"Игровые / итоговые кадры"</string>
+    <string name="original" formatted="false">"Исходное"</string>
+    <string name="original_fps" formatted="false">"Исходный FPS"</string>
+    <string name="shows_original_frames_immediately" formatted="false">"Исходный кадр выводится сразу"</string>
+    <string name="frames_are_processed_on_this_device" formatted="false">"Кадры обрабатываются на устройстве"</string>
+    <string name="quality_precise_bicubic" formatted="false">"Качество (точный бикубический)"</string>
+    <string name="quality" formatted="false">"Качество"</string>
+    <string name="codec" formatted="false">"Кодек "</string>
+    <string name="the_encoder_did_not_return_mp4_data" formatted="false">"Кодек не вернул данные MP4"</string>
+    <string name="the_encoder_did_not_finish_writing_the_video" formatted="false">"Кодек не завершил запись видео"</string>
+    <string name="the_encoder_did_not_write_a_video_track" formatted="false">"Кодек не записал видеодорожку"</string>
+    <string name="the_encoder_changed_format_after_writing_started" formatted="false">"Кодек сменил формат после начала записи"</string>
+    <string name="the_encoder_did_not_confirm_hdr10_output" formatted="false">"Кодировщик не подтвердил цвет HDR10"</string>
+    <string name="input_fps_limit" formatted="false">"Лимит входных кадров"</string>
+    <string name="capture_fps_limit" formatted="false">"Лимит захвата, FPS"</string>
+    <string name="best_quality_edges_and_history" formatted="false">"Лучшее качество (контуры и история)"</string>
+    <string name="low_latency" formatted="false">"Малая задержка"</string>
+    <string name="video_timestamp" formatted="false">"Метка времени видео"</string>
+    <string name="back" formatted="false">"Назад"</string>
+    <string name="in_game_settings" formatted="false">"Настройки в игре"</string>
+    <string name="performance_settings" formatted="false">"Настройки производительности  ▴"</string>
+    <string name="performance_settings_suffix" formatted="false">"Настройки производительности  ▾"</string>
+    <string name="the_encoder_did_not_report_an_output_format" formatted="false">"Не получен выходной формат кодека"</string>
+    <string name="egl_could_not_present_the_frame" formatted="false">"Не удалось вывести кадр через EGL"</string>
+    <string name="could_not_start_capture_select_the_app_again" formatted="false">"Не удалось запустить захват. Повтори выбор приложения."</string>
+    <string name="could_not_initialize_egl" formatted="false">"Не удалось инициализировать EGL"</string>
+    <string name="could_not_export_the_video" formatted="false">"Не удалось экспортировать видео."</string>
+    <string name="invalid_resolution" formatted="false">"Неверное разрешение"</string>
+    <string name="no_virtual_display" formatted="false">"Нет виртуального экрана"</string>
+    <string name="no_decoder_input_buffer" formatted="false">"Нет входного буфера декодера"</string>
+    <string name="no_egl_surface" formatted="false">"Нет поверхности EGL"</string>
+    <string name="frames_processed" formatted="false">"Обработано кадров: "</string>
+    <string name="video_processing" formatted="false">"Обработка видео"</string>
+    <string name="processing_started" formatted="false">"Обработка запущена"</string>
+    <string name="original_game" formatted="false">"Оригинал игры"</string>
+    <string name="stop_processing" formatted="false">"Остановить обработку"</string>
+    <string name="stop" formatted="false">"Остановить"</string>
+    <string name="label_160_to_4096_pixels" formatted="false">"От 160 до 4096 пикселей"</string>
+    <string name="open_test_scene" formatted="false">"Открыть тестовую сцену"</string>
+    <string name="open_notification_shade" formatted="false">"Открыть шторку Android"</string>
+    <string name="cancel" formatted="false">"Отмена"</string>
+    <string name="canceling" formatted="false">"Отмена…"</string>
+    <string name="cancel_export" formatted="false">"Отменить экспорт"</string>
+    <string name="gpu_error" formatted="false">"Ошибка GPU"</string>
+    <string name="mp4_settings" formatted="false">"Параметры MP4"</string>
+    <string name="switching_egl_surfaces" formatted="false">"Переключение EGL"</string>
+    <string name="use_profile" formatted="false">"По профилю"</string>
+    <string name="egl_scrgb_fp16_surface_unavailable" formatted="false">"Поверхность EGL scRGB FP16 недоступна"</string>
+    <string name="egl_output_surface_unavailable" formatted="false">"Поверхность вывода EGL недоступна"</string>
+    <string name="preparing_gpu_and_codecs" formatted="false">"Подготовка GPU и кодеков…"</string>
+    <string name="show_original" formatted="false">"Показать оригинал"</string>
+    <string name="sync_frame_generation_to_the_display" formatted="false">"Привязать генерацию к экрану"</string>
+    <string name="apply" formatted="false">"Применить"</string>
+    <string name="performance_bilinear" formatted="false">"Производительность (билинейный)"</string>
+    <string name="performance" formatted="false">"Производительность"</string>
+    <string name="motion_profile" formatted="false">"Профиль движения"</string>
+    <string name="the_system_did_not_allow_the_overlay" formatted="false">"Прошивка не разрешила создать слой вывода."</string>
+    <string name="resolution_exceeds_the_gpu_limit" formatted="false">"Разрешение превышает лимит GPU"</string>
+    <string name="resolution" formatted="false">"Разрешение"</string>
+    <string name="enable_overlay" formatted="false">"Разрешить вывод"</string>
+    <string name="native_profile" formatted="false">"Родное"</string>
+    <string name="custom_canvas" formatted="false">"Ручной холст · "</string>
+    <string name="sync_rendering_to_the_display" formatted="false">"Синхронизация рендера с дисплеем"</string>
+    <string name="audio_packet_is_too_large" formatted="false">"Слишком большой звуковой пакет"</string>
+    <string name="the_overlay_service_has_been_disabled" formatted="false">"Служба слоя вывода отключена."</string>
+    <string name="creating_gles_buffer" formatted="false">"Создание буфера GLES"</string>
+    <string name="creating_gles_context" formatted="false">"Создание контекста GLES"</string>
+    <string name="saving_mp4" formatted="false">"Сохранение MP4…"</string>
+    <string name="keep_audio" formatted="false">"Сохранить звук"</string>
+    <string name="compare_with_the_unprocessed_game" formatted="false">"Сравнение без обработки"</string>
+    <string name="fps_counter_is_off" formatted="false">"Счётчик FPS выключен"</string>
+    <string name="fps_counter" formatted="false">"Счётчик FPS"</string>
+    <string name="hardware_decoding_is_unavailable_for" formatted="false">"Телефон не поддерживает аппаратное декодирование "</string>
+    <string name="precise" formatted="false">"Точный"</string>
+    <string name="increase_the_frame_rate_or_resolution_and_export_to_mp4" formatted="false">"Увеличь частоту кадров или разрешение и сохрани результат в MP4."</string>
+    <string name="filter" formatted="false">"Фильтр"</string>
+    <string name="canvas" formatted="false">"Холст · "</string>
+    <string name="canvas_use_profile" formatted="false">"Холст · по профилю"</string>
+    <string name="capture_canvas" formatted="false">"Холст захвата"</string>
+    <string name="color" formatted="false">"Цвет"</string>
+    <string name="egl_bt_2020_pq_color_space_unavailable" formatted="false">"Цветовое пространство EGL BT.2020 PQ недоступно"</string>
+    <string name="frame_rate" formatted="false">"Частота кадров"</string>
+    <string name="width" formatted="false">"Ширина"</string>
+    <string name="export_canceled" formatted="false">"Экспорт отменён."</string>
+    <string name="export_mp4" formatted="false">"Экспортировать MP4"</string>
+    <string name="language" formatted="false">"Язык"</string>
+    <string name="system_default" formatted="false">"Язык системы"</string>
+    <string name="about" formatted="false">"О приложении"</string>
+    <string name="about_description" formatted="false">"Генерация кадров ×2–×4 и апскейлинг игр и видео на GPU. Экспорт MP4 с HDR10 на совместимых устройствах."</string>
+    <string name="open_github" formatted="false">"Открыть GitHub"</string>
+    <string name="no_app_can_open_this_link" formatted="false">"Нет приложения для открытия ссылки."</string>
+    <string name="overlay_name" formatted="false">"Motion FG — слой вывода"</string>
+    <string name="overlay_description" formatted="false">"Показывает обработанные кадры и быстрые настройки поверх игры. Использует расположение системных окон, чтобы скрыть картинку, когда открыта шторка."</string>
+</resources>

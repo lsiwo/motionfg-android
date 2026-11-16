@@ -1,0 +1,159 @@
+<resources>
+    <string name="display" formatted="false">"  ·  display "</string>
+    <string name="fps_reduce_the_resolution_or_frame_multiplier" formatted="false">" FPS. Reduce the resolution or frame multiplier."</string>
+    <string name="hdr_output_unavailable" formatted="false">" · HDR output unavailable"</string>
+    <string name="up_to" formatted="false">" · up to "</string>
+    <string name="frame" formatted="false">" · frame "</string>
+    <string name="hz" formatted="false">" Hz"</string>
+    <string name="in_pixels" formatted="false">" in pixels"</string>
+    <string name="frames" formatted="false">" frames · "</string>
+    <string name="does_not_support" formatted="false">" does not support "</string>
+    <string name="at" formatted="false">" at "</string>
+    <string name="per_axis" formatted="false">"% per axis"</string>
+    <string name="of_app_size" formatted="false">"% of app size"</string>
+    <string name="you_can_turn_off_keep_audio_for_this_file" formatted="false">". You can turn off Keep audio for this file."</string>
+    <string name="label_120_nits" formatted="false">"120 nits"</string>
+    <string name="label_160_nits" formatted="false">"160 nits"</string>
+    <string name="label_203_nits" formatted="false">"203 nits"</string>
+    <string name="label_250_nits" formatted="false">"250 nits"</string>
+    <string name="android_denied_screen_capture" formatted="false">"Android denied screen capture."</string>
+    <string name="android_could_not_create_the_capture_display_select_the_app_again" formatted="false">"Android could not create the capture display. Select the app again."</string>
+    <string name="egl_opened_a_different_color_space" formatted="false">"EGL opened a different color space"</string>
+    <string name="egl_configuration_unavailable" formatted="false">"EGL configuration unavailable"</string>
+    <string name="gpu_could_not_allocate_buffers_for" formatted="false">"GPU could not allocate buffers for "</string>
+    <string name="gpu_could_not_send_the_frame_to_the_encoder" formatted="false">"GPU could not send the frame to the encoder"</string>
+    <string name="mp4_does_not_support_the_audio_track" formatted="false">"MP4 does not support the audio track "</string>
+    <string name="motion_fg_is_running" formatted="false">"Motion FG is running"</string>
+    <string name="motionfg_decoder" formatted="false">"MotionFG decoder"</string>
+    <string name="v_sync_on" formatted="false">"V-Sync on"</string>
+    <string name="v_sync_off" formatted="false">"V-Sync off"</string>
+    <string name="auto" formatted="false">"Auto"</string>
+    <string name="automatic" formatted="false">"Automatic"</string>
+    <string name="upscaling" formatted="false">"Upscaling"</string>
+    <string name="balanced_fast_bicubic" formatted="false">"Balanced (fast bicubic)"</string>
+    <string name="balanced" formatted="false">"Balanced"</string>
+    <string name="sdr_white_in_hdr" formatted="false">"SDR white in HDR"</string>
+    <string name="motion_fg_quick_settings" formatted="false">"Motion FG quick settings"</string>
+    <string name="fast" formatted="false">"Fast"</string>
+    <string name="in_android_s_prompt_select_a_single_app_and_choose_the_game" formatted="false">"In Android’s prompt, select A single app and choose the game."</string>
+    <string name="the_file_has_no_video_track" formatted="false">"The file has no video track"</string>
+    <string name="video_selected" formatted="false">"Video selected"</string>
+    <string name="video" formatted="false">"Video"</string>
+    <string name="enable_motion_fg_in_accessibility_to_display_processed_frames_ove" formatted="false">"Enable Motion FG in Accessibility to display processed frames over the game."</string>
+    <string name="enable_the_overlay_service_and_select_the_game_again" formatted="false">"Enable the overlay service and select the game again."</string>
+    <string name="choose_a_different_output_file" formatted="false">"Choose a different output file."</string>
+    <string name="the_selected_file_is_not_writable" formatted="false">"The selected file is not writable"</string>
+    <string name="select_video" formatted="false">"Select video"</string>
+    <string name="select_game" formatted="false">"Select game"</string>
+    <string name="hdr10_or_scrgb_output" formatted="false">"HDR10 or scRGB output"</string>
+    <string name="off" formatted="false">"Off"</string>
+    <string name="height" formatted="false">"Height"</string>
+    <string name="frame_generation" formatted="false">"Frame generation"</string>
+    <string name="done" formatted="false">"Done · "</string>
+    <string name="the_decoder_did_not_produce_any_frames" formatted="false">"The decoder did not produce any frames"</string>
+    <string name="the_decoder_did_not_send_a_frame_to_the_gpu" formatted="false">"The decoder did not send a frame to the GPU"</string>
+    <string name="the_decoder_does_not_support_hdr_to_sdr_conversion" formatted="false">"The decoder does not support HDR-to-SDR conversion"</string>
+    <string name="the_decoder_stopped_producing_frames" formatted="false">"The decoder stopped producing frames"</string>
+    <string name="up_to_suffix" formatted="false">"Up to ×"</string>
+    <string name="the_gpu_driver_could_not_open_a_10_bit_yuv_surface_for_hdr" formatted="false">"The GPU driver could not open a 10-bit YUV surface for HDR"</string>
+    <string name="set_the_capture_buffer_width_and_height_in_pixels" formatted="false">"Set the capture buffer width and height in pixels."</string>
+    <string name="close_settings" formatted="false">"Close settings"</string>
+    <string name="capture" formatted="false">"Capture · "</string>
+    <string name="capture_is_active_tap_fg_in_game_for_quick_settings" formatted="false">"Capture is active. Tap FG in game for quick settings."</string>
+    <string name="capture_failed_to_start_select_the_game_again" formatted="false">"Capture failed to start. Select the game again."</string>
+    <string name="game" formatted="false">"Game"</string>
+    <string name="game_profile" formatted="false">"Game profile"</string>
+    <string name="game_output_frames" formatted="false">"Game / output frames"</string>
+    <string name="original" formatted="false">"Original"</string>
+    <string name="original_fps" formatted="false">"Original FPS"</string>
+    <string name="shows_original_frames_immediately" formatted="false">"Shows original frames immediately"</string>
+    <string name="frames_are_processed_on_this_device" formatted="false">"Frames are processed on this device"</string>
+    <string name="quality_precise_bicubic" formatted="false">"Quality (precise bicubic)"</string>
+    <string name="quality" formatted="false">"Quality"</string>
+    <string name="codec" formatted="false">"Codec "</string>
+    <string name="the_encoder_did_not_return_mp4_data" formatted="false">"The encoder did not return MP4 data"</string>
+    <string name="the_encoder_did_not_finish_writing_the_video" formatted="false">"The encoder did not finish writing the video"</string>
+    <string name="the_encoder_did_not_write_a_video_track" formatted="false">"The encoder did not write a video track"</string>
+    <string name="the_encoder_changed_format_after_writing_started" formatted="false">"The encoder changed format after writing started"</string>
+    <string name="the_encoder_did_not_confirm_hdr10_output" formatted="false">"The encoder did not confirm HDR10 output"</string>
+    <string name="input_fps_limit" formatted="false">"Input FPS limit"</string>
+    <string name="capture_fps_limit" formatted="false">"Capture FPS limit"</string>
+    <string name="best_quality_edges_and_history" formatted="false">"Best quality (edges and history)"</string>
+    <string name="low_latency" formatted="false">"Low latency"</string>
+    <string name="video_timestamp" formatted="false">"Video timestamp"</string>
+    <string name="back" formatted="false">"Back"</string>
+    <string name="in_game_settings" formatted="false">"In-game settings"</string>
+    <string name="performance_settings" formatted="false">"Performance settings  ▴"</string>
+    <string name="performance_settings_suffix" formatted="false">"Performance settings  ▾"</string>
+    <string name="the_encoder_did_not_report_an_output_format" formatted="false">"The encoder did not report an output format"</string>
+    <string name="egl_could_not_present_the_frame" formatted="false">"EGL could not present the frame"</string>
+    <string name="could_not_start_capture_select_the_app_again" formatted="false">"Could not start capture. Select the app again."</string>
+    <string name="could_not_initialize_egl" formatted="false">"Could not initialize EGL"</string>
+    <string name="could_not_export_the_video" formatted="false">"Could not export the video."</string>
+    <string name="invalid_resolution" formatted="false">"Invalid resolution"</string>
+    <string name="no_virtual_display" formatted="false">"No virtual display"</string>
+    <string name="no_decoder_input_buffer" formatted="false">"No decoder input buffer"</string>
+    <string name="no_egl_surface" formatted="false">"No EGL surface"</string>
+    <string name="frames_processed" formatted="false">"Frames processed: "</string>
+    <string name="video_processing" formatted="false">"Video processing"</string>
+    <string name="processing_started" formatted="false">"Processing started"</string>
+    <string name="original_game" formatted="false">"Original game"</string>
+    <string name="stop_processing" formatted="false">"Stop processing"</string>
+    <string name="stop" formatted="false">"Stop"</string>
+    <string name="label_160_to_4096_pixels" formatted="false">"160 to 4096 pixels"</string>
+    <string name="open_test_scene" formatted="false">"Open test scene"</string>
+    <string name="open_notification_shade" formatted="false">"Open notification shade"</string>
+    <string name="cancel" formatted="false">"Cancel"</string>
+    <string name="canceling" formatted="false">"Canceling…"</string>
+    <string name="cancel_export" formatted="false">"Cancel export"</string>
+    <string name="gpu_error" formatted="false">"GPU error"</string>
+    <string name="mp4_settings" formatted="false">"MP4 settings"</string>
+    <string name="switching_egl_surfaces" formatted="false">"Switching EGL surfaces"</string>
+    <string name="use_profile" formatted="false">"Use profile"</string>
+    <string name="egl_scrgb_fp16_surface_unavailable" formatted="false">"EGL scRGB FP16 surface unavailable"</string>
+    <string name="egl_output_surface_unavailable" formatted="false">"EGL output surface unavailable"</string>
+    <string name="preparing_gpu_and_codecs" formatted="false">"Preparing GPU and codecs…"</string>
+    <string name="show_original" formatted="false">"Show original"</string>
+    <string name="sync_frame_generation_to_the_display" formatted="false">"Sync frame generation to the display"</string>
+    <string name="apply" formatted="false">"Apply"</string>
+    <string name="performance_bilinear" formatted="false">"Performance (bilinear)"</string>
+    <string name="performance" formatted="false">"Performance"</string>
+    <string name="motion_profile" formatted="false">"Motion profile"</string>
+    <string name="the_system_did_not_allow_the_overlay" formatted="false">"The system did not allow the overlay."</string>
+    <string name="resolution_exceeds_the_gpu_limit" formatted="false">"Resolution exceeds the GPU limit"</string>
+    <string name="resolution" formatted="false">"Resolution"</string>
+    <string name="enable_overlay" formatted="false">"Enable overlay"</string>
+    <string name="native_profile" formatted="false">"Native"</string>
+    <string name="custom_canvas" formatted="false">"Custom canvas · "</string>
+    <string name="sync_rendering_to_the_display" formatted="false">"Sync rendering to the display"</string>
+    <string name="audio_packet_is_too_large" formatted="false">"Audio packet is too large"</string>
+    <string name="the_overlay_service_has_been_disabled" formatted="false">"The overlay service has been disabled."</string>
+    <string name="creating_gles_buffer" formatted="false">"Creating GLES buffer"</string>
+    <string name="creating_gles_context" formatted="false">"Creating GLES context"</string>
+    <string name="saving_mp4" formatted="false">"Saving MP4…"</string>
+    <string name="keep_audio" formatted="false">"Keep audio"</string>
+    <string name="compare_with_the_unprocessed_game" formatted="false">"Compare with the unprocessed game"</string>
+    <string name="fps_counter_is_off" formatted="false">"FPS counter is off"</string>
+    <string name="fps_counter" formatted="false">"FPS counter"</string>
+    <string name="hardware_decoding_is_unavailable_for" formatted="false">"Hardware decoding is unavailable for "</string>
+    <string name="precise" formatted="false">"Precise"</string>
+    <string name="increase_the_frame_rate_or_resolution_and_export_to_mp4" formatted="false">"Increase the frame rate or resolution and export to MP4."</string>
+    <string name="filter" formatted="false">"Filter"</string>
+    <string name="canvas" formatted="false">"Canvas · "</string>
+    <string name="canvas_use_profile" formatted="false">"Canvas · use profile"</string>
+    <string name="capture_canvas" formatted="false">"Capture canvas"</string>
+    <string name="color" formatted="false">"Color"</string>
+    <string name="egl_bt_2020_pq_color_space_unavailable" formatted="false">"EGL BT.2020 PQ color space unavailable"</string>
+    <string name="frame_rate" formatted="false">"Frame rate"</string>
+    <string name="width" formatted="false">"Width"</string>
+    <string name="export_canceled" formatted="false">"Export canceled."</string>
+    <string name="export_mp4" formatted="false">"Export MP4"</string>
+    <string name="language" formatted="false">"Language"</string>
+    <string name="system_default" formatted="false">"System default"</string>
+    <string name="about" formatted="false">"About"</string>
+    <string name="about_description" formatted="false">"GPU frame generation (×2–×4) and upscaling for games and videos. MP4 export with HDR10 on compatible devices."</string>
+    <string name="open_github" formatted="false">"Open GitHub"</string>
+    <string name="no_app_can_open_this_link" formatted="false">"No app can open this link."</string>
+    <string name="overlay_name" formatted="false">"Motion FG overlay"</string>
+    <string name="overlay_description" formatted="false">"Shows processed frames and quick settings over a game. Uses system window bounds to hide the overlay when the notification shade opens."</string>
+</resources>
