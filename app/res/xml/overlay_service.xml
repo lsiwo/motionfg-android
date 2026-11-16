@@ -1,9 +1,0 @@
-<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
-    android:description="@string/overlay_description"
-    android:accessibilityEventTypes="typeWindowsChanged|typeWindowStateChanged"
-    android:accessibilityFeedbackType="feedbackVisual"
-    android:accessibilityFlags="flagRetrieveInteractiveWindows"
-    android:notificationTimeout="45"
-    android:canRetrieveWindowContent="true"
-    android:canPerformGestures="false"
-    android:isAccessibilityTool="false" />
