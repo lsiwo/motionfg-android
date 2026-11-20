@@ -27,7 +27,7 @@ layout(binding = 2) uniform mediump sampler2D MotionDepthClipAlphaBuffer;
 layout(binding = 3) uniform mediump sampler2D InputColor;
 uniform sampler2D SceneCut;
 
-layout(std140, set = 0, binding = 0) uniform Params
+layout(std140, binding = 0) uniform Params
 {
     highp vec4                 clipToPrevClip[4];
     highp vec2                 renderSize;
