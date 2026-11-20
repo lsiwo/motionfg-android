@@ -45,6 +45,7 @@ final class GlVideo implements AutoCloseable {
     private boolean signatureReady;
     private final float[] matrix = new float[16];
     private GlProgram demoProgram;
+    private Sgsr2Pipeline sgsr2;
     private int width, height;
     private CaptureGeometry geometry;
     private int fineW, fineH, coarseW, coarseH, fineGridW, fineGridH, coarseGridW, coarseGridH;
@@ -101,6 +102,18 @@ final class GlVideo implements AutoCloseable {
             validateMotion = program("reliability.frag");
             warp = program("interpolate.frag");
             present = program("present.frag");
+            // SGSR2 is optional and only activated on GLES 3.2 SDR contexts.
+            // MediaProjection lacks native depth/camera buffers, so the backend
+            // uses a documented far-depth + optical-flow approximation.
+            if (!hdr && glGetString(GL_VERSION) != null
+                    && glGetString(GL_VERSION).contains("OpenGL ES 3.2")) {
+                try {
+                    sgsr2 = new Sgsr2Pipeline(assets);
+                } catch (RuntimeException | IOException unavailable) {
+                    android.util.Log.w("MotionFG", "SGSR2 backend unavailable; keeping existing temporal scaler", unavailable);
+                    sgsr2 = null;
+                }
+            }
             probe = useProbe ? program("probe.frag") : null;
             signature = useProbe ? program("signature.frag") : null;
             glGenFramebuffers(1, scratch, 0);
@@ -426,6 +439,27 @@ final class GlVideo implements AutoCloseable {
         boolean enlarging = w > width || h > height;
         if (!enlarging) filter = RenderSettings.LINEAR;
         boolean generated = phase < 1f;
+        // Use SGSR2 for completed SDR temporal-upscale frames only. Generated
+        // intermediate phases keep the existing motion-compensated path.
+        if (sgsr2 != null && enlarging && filter == RenderSettings.TEMPORAL
+                && !generated && prior >= 0 && prior < frameIds.length) {
+            boolean resetSgsrHistory = motionB != frameIds[prior];
+            estimate(prior, slot);
+            int upscaled = sgsr2.process(colors[slot], fineVectors, confidence,
+                    width, height, w, h, motionRange() / width, motionRange() / height,
+                    resetSgsrHistory);
+            if (upscaled != 0) {
+                if (staged) target(stage[0], w, h);
+                else {
+                    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+                    glViewport(0, 0, w, h);
+                }
+                prepareImage(upscaled, RenderSettings.LINEAR, egl.mode);
+                present.integer("historyEnabled", 0);
+                draw();
+                return;
+            }
+        }
         int first = 0, second;
         if (enlarging && (filter == RenderSettings.TEMPORAL || reuseScale && filter != RenderSettings.LINEAR)
                 && ensureHistory(w, h)) {
@@ -598,6 +632,10 @@ final class GlVideo implements AutoCloseable {
     @Override public void close() {
         releaseInput();
         discardStage();
+        if (sgsr2 != null) {
+            sgsr2.close();
+            sgsr2 = null;
+        }
         egl.close();
     }
 }
