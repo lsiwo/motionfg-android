@@ -148,6 +148,9 @@ final class Sgsr2Pipeline implements AutoCloseable {
         outputWidth = dw;
         outputHeight = dh;
         textures[0] = texture(GL_R32F, sw, sh, GL_RED, GL_FLOAT);
+        glBindTexture(GL_TEXTURE_2D, textures[0]);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         textures[1] = texture(GL_RGBA8, sw, sh, GL_RGBA, GL_UNSIGNED_BYTE);
         textures[2] = texture(GL_RGBA16F, sw, sh, GL_RGBA, GL_HALF_FLOAT);
         textures[3] = texture(GL_RGBA8, dw, dh, GL_RGBA, GL_UNSIGNED_BYTE);
