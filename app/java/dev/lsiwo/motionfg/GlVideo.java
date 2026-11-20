@@ -446,7 +446,7 @@ final class GlVideo implements AutoCloseable {
             boolean resetSgsrHistory = motionB != frameIds[prior];
             estimate(prior, slot);
             int upscaled = sgsr2.process(colors[slot], fineVectors, confidence,
-                    width, height, w, h, motionRange() / width, motionRange() / height,
+                    width, height, w, h, cut, motionRange() / width, motionRange() / height,
                     resetSgsrHistory);
             if (upscaled != 0) {
                 if (staged) target(stage[0], w, h);
