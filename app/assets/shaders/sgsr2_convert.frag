@@ -17,7 +17,7 @@ layout(location = 0) in highp vec2 texCoord;
 layout(binding = 1) uniform mediump sampler2D InputDepth;
 layout(binding = 2) uniform mediump sampler2D InputVelocity;
 
-layout(std140, set = 0, binding = 0) uniform Params
+layout(std140, binding = 0) uniform Params
 {
     vec4                 clipToPrevClip[4];
     vec2                 renderSize;
