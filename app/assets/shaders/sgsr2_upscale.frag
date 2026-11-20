@@ -25,6 +25,7 @@ layout(location = 0) in highp vec2 texCoord;
 layout(binding = 1) uniform mediump sampler2D PrevOutput;
 layout(binding = 2) uniform mediump sampler2D MotionDepthClipAlphaBuffer;
 layout(binding = 3) uniform mediump sampler2D InputColor;
+uniform sampler2D SceneCut;
 
 layout(std140, set = 0, binding = 0) uniform Params
 {
@@ -277,7 +278,7 @@ void main()
 
     ////blend color
     float alphasum = max(EPSILON, basealpha + Upsampledcw.w);
-    float alpha = clamp(Upsampledcw.w / alphasum + params.reset, 0.0, 1.0);
+    float alpha = clamp(Upsampledcw.w / alphasum + max(params.reset, texelFetch(SceneCut, ivec2(0), 0).r), 0.0, 1.0);
 
     Upsampledcw.xyz = mix(HistoryColor, Upsampledcw.xyz, alpha);
 
