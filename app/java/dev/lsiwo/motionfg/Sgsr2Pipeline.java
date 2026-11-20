@@ -53,6 +53,7 @@ final class Sgsr2Pipeline implements AutoCloseable {
         bindSampler(upscaleProgram, "PrevOutput", 0);
         bindSampler(upscaleProgram, "MotionDepthClipAlphaBuffer", 1);
         bindSampler(upscaleProgram, "InputColor", 2);
+        bindSampler(upscaleProgram, "SceneCut", 3);
         bindSampler(velocityProgram, "motionField", 0);
         bindSampler(velocityProgram, "confidenceField", 1);
     }
@@ -92,7 +93,7 @@ final class Sgsr2Pipeline implements AutoCloseable {
     }
 
     int process(int inputColor, int motionField, int confidenceField,
-            int srcW, int srcH, int dstW, int dstH,
+            int srcW, int srcH, int dstW, int dstH, int sceneCut,
             float spanX, float spanY, boolean reset) {
         if (closed || inputColor == 0 || motionField == 0 || confidenceField == 0
                 || srcW <= 0 || srcH <= 0 || dstW <= 0 || dstH <= 0
@@ -129,6 +130,7 @@ final class Sgsr2Pipeline implements AutoCloseable {
         bindTexture(0, textures[3 + historyRead]);
         bindTexture(1, textures[2]);
         bindTexture(2, inputColor);
+        bindTexture(3, sceneCut);
         draw();
 
         historyRead = write;
