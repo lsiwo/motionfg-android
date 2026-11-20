@@ -37,6 +37,12 @@ Open **Video**, choose a source, and set the multiplier, filter, output size, an
 - Game output can use SDR, HDR10 PQ, or scRGB. The **FG** panel reports the negotiated format and lets you adjust SDR white in HDR mode.
 - Video export uses hardware H.264 for SDR and HEVC Main10 for HDR10. **Auto** follows the input's dynamic range. The available resolution, frame rate, and HDR combinations depend on the device's codecs and GPU driver.
 
+## Experimental Snapdragon GSR 2 path
+
+On OpenGL ES 3.2 devices, SDR output using the Temporal scaling profile can use the experimental Qualcomm Snapdragon Game Super Resolution 2 two-pass fragment path. If shader setup or framebuffer allocation fails, Motion FG falls back to its existing temporal scaler.
+
+This capture-based integration estimates velocity from Motion FG optical flow and uses a far-plane depth fallback. It does **not** receive the game's native depth buffer, camera matrices, or engine motion vectors. Results therefore are not equivalent to an engine-level SGSR 2 integration and may be less stable around HUD, particles, transparency, disocclusion, and rapid camera motion. It is not enabled for HDR or generated intermediate phases. Hardware shader compilation and visual/thermal validation are still required before treating this path as production-ready.
+
 ## Privacy
 
 Game capture starts after approval in Android's MediaProjection dialog. The accessibility service hosts the overlay and checks system window bounds to give the notification shade space. Video input and export use Android's file picker. Game frames and chosen videos are processed locally. The app requests no internet permission.
